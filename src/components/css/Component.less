@@ -1,0 +1,50 @@
+@import "~antd/dist/antd.less"; 
+@import "base.less";
+
+.container {
+    height:50px;
+}
+
+header {
+    height:50px;
+    line-height: 50px;
+    width:100%;
+    font-size:24px;
+    margin: 0 auto;
+    padding:0 20px;
+    background:@color-black;
+    color:@color-white;
+    z-index: 999;
+    position:fixed;
+}
+
+.home {
+   background-image: url('/img/nature.jpg');
+   background-size:cover;
+   width:100%;
+   height:calc(100vh - 50px);
+}
+
+.list {
+    background-color:@color-white;
+    border-radius:12px;
+    margin-top:60px;
+    padding:30px;
+    box-shadow: 0 1.5rem 4rem rgba(@color-black,.4);
+}
+
+.todo-secondary-header {
+    float:left;
+}
+
+.add-button {
+    float: right;
+}
+
+.clearfix {
+    &::after {
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
